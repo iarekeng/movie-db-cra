@@ -1,0 +1,140 @@
+*{
+  /* border: 1px solid gold; */
+}
+body {
+  background: #0F0F0F;
+}
+
+/* Navbar */
+.login-button, .register-button, .logout-button {
+  margin-right: 10px;
+  color: whitesmoke;
+}
+
+.login-button:hover, .register-button:hover, .logout-button:hover {
+  text-decoration: none;
+  color: darkgrey;
+  cursor: pointer;
+}
+
+/*  */
+
+/* Carousel */
+#carouselExampleIndicators {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.carousel-inner {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+
+
+.lineBreak {
+  border: solid #ddd;
+  border-width: 1px 0 0 0
+}
+
+.banner-container {
+  position: relative;
+}
+
+.banner-text-container {
+  position: absolute;
+  max-width: 500px;
+  bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.popularMovies {
+  color: white;
+}
+
+.banner-title {
+  color: white;
+}
+
+.banner-text {
+  color: white;
+  font-size: 1rem;
+}
+
+#banner-image {
+  linear-gradient: (to bottom, rgba(0,0,0,0)
+   39%, rgba(0,0,0,0)
+   41%, rgba(0,0,0,0.65)
+   100%);
+  height: 500px;
+  background-size: 100% cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.title-style {
+  width: 85%;
+  margin: 1rem auto;
+}
+
+/*  */
+
+/* Body */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+
+}
+
+.gridImg {
+  width: 100%;
+  height: 320px;
+}
+/* Load More Button */
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+}
+
+.loadbutton {
+  margin: 5px;
+}
+
+
+/* Register Page */
+.register-container {
+  color: whitesmoke;
+}
+
+/* Footer */
+
+.footer1-title {
+  padding-top: 1em;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #1D2124;
+  padding: 2em 0;
+  color: ghostwhite;
+  text-align: center;
+
+}
+
+#facebook {
+  padding: 0 25px;
+}
+
+#instagram, #facebook, #twitter {
+  font-size: 30px;
+}
