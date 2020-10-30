@@ -6,7 +6,7 @@ const { Title } = Typography;
 
 function BannerImage(props) {
   return(
-    <div id="carouselExampleIndicators" className="banner-  container carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" className="banner-  container carousel slide carousel-fade" data-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
         <img id="banner-image" src={props.image} alt="banner1" />
