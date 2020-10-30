@@ -11,4 +11,4 @@ function GridCard(props) {
   )
 }
 
-export default GridCard
+export default GridCard;
