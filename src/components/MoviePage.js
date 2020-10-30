@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { IMAGE_URL, API_URL, API_KEY } from './apisource'
-import Movie from './main'
+
 import BannerID from './BannerID'
 
 function MoviePage(props) {
 
-const [Movie, setMovie] = useState([])
+const [Movie, setMovie] = useState();
+const movieId = props.match.params.movieId
 
   useEffect(() => {
-    const movieId = props.match.params.movieId
 
     fetch(`${API_URL}movie/${movieId}?api_key=${API_KEY}&language=en-US`)
     .then(response => response.json())

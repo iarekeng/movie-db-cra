@@ -9,21 +9,21 @@ function BannerImage(props) {
     <div id="carouselExampleIndicators" className="banner-  container carousel slide" data-ride="carousel">
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img id="banner-image" src={props.image} alt="image" />
+        <img id="banner-image" src={props.image} alt="banner1" />
         <div className="banner-text-container">
           <Title className="banner-title" level={2} > {props.title}</Title>
           <p className="banner-text">{props.text}</p>
         </div>
         </div>
         <div className="carousel-item">
-          <img id="banner-image" src={props.image2} alt="image" />
+          <img id="banner-image" src={props.image2} alt="banner2" />
           <div className="banner-text-container">
           <Title className="banner-title" level={2} > {props.title2}</Title>
           <p className="banner-text">{props.text2}</p>
           </div>
         </div>
           <div className="carousel-item">
-            <img id="banner-image" src={props.image3} alt="image" />
+            <img id="banner-image" src={props.image3} alt="banner3" />
             <div className="banner-text-container">
             <Title className="banner-title" level={2} > {props.title3}</Title>
             <p className="banner-text">{props.text3}</p>

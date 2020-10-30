@@ -9,6 +9,8 @@ body {
 .login-button, .register-button, .logout-button {
   margin-right: 10px;
   color: whitesmoke;
+  background: #353A40;
+  border: none;
 }
 
 .login-button:hover, .register-button:hover, .logout-button:hover {

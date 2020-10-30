@@ -30,11 +30,11 @@ function Navbar() {
     </ul>
     <div className="auth-options">
     {userData.user ? (
-      <a className="logout-button" onClick={logout}>Log Out</a>
+      <button className="logout-button" onClick={logout}>Log Out</button>
       ) : (
         <>
-        <a className="login-button" onClick={login}>Login</a>
-        <a className="register-button" onClick={register}>Register</a>
+        <button className="login-button"  onClick={login}>Login</button>
+        <button className="register-button"  onClick={register}>Register</button>
         </>
       )}
     </div>

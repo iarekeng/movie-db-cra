@@ -5,7 +5,7 @@ function GridCard(props) {
   return (
     <div>
       <a href={`/movie/${props.movieId}`}>
-        <img className="gridImg" src={props.image} />
+        <img className="gridImg" src={props.image} alt="grid-images"/>
       </a>
     </div>
   )
