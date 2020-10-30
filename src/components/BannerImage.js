@@ -42,4 +42,4 @@ function BannerImage(props) {
   )
 }
 
-export default BannerImage
+export default BannerImage;
