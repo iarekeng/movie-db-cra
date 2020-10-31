@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { API_URL, API_KEY, IMAGE_URL } from './apisource'
+import { API_URL, API_KEY, IMAGE_URL, Search_API } from './apisource'
 import BannerImage from './BannerImage'
-import { Typography, Row } from 'antd'
+import SearchBar from './SearchBar'
+import { Row } from 'antd'
 import GridCard from './GridCard'
-const { Title } = Typography;
+import Axios from "axios"
+
 
 function Main() {
 
   const [Movies, setMovies] = useState([])
   const [CurrentPage, setCurrentPage] = useState(0)
+  const [searchTerm, setSearchTerm] = useState('');
+  const [list, setList] = useState([]);
+
   useEffect(() => {
-    const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`
+    const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US`
     loadMore(endpoint)
   }, [])
 
@@ -21,6 +26,7 @@ function Main() {
       console.log(response);
       setMovies(response.results)
       setCurrentPage(response.page)
+      setList(response.results)
     })
   }
   const handlePrev = () => {
@@ -33,20 +39,39 @@ function Main() {
     loadMore(endpoint);
   }
 
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    fetch(Search_API + searchTerm)
+    .then(response => response.json())
+    .then(response => {
+      console.log(response);
+      setList(response.results)
+    });
+  }
+
+  const handleOnChange = (e) => {
+    setSearchTerm(e.target.value);
+  }
+
+
+
   return (
     <div id="banner-scroll">
-      {Movies[13] &&
-        <BannerImage  image={`${IMAGE_URL}w1280${Movies[13].backdrop_path && Movies[13].backdrop_path}`}
-        title={Movies[13].original_title} text={Movies[13].overview}
-        image2={`${IMAGE_URL}w1280${Movies[7].backdrop_path && Movies[7].backdrop_path}`}
-        title2={Movies[7].original_title} text2={Movies[7].overview}
-        image3={`${IMAGE_URL}w1280${Movies[17].backdrop_path && Movies[17].backdrop_path}`}
-        title3={Movies[17].original_title} text3={Movies[17].overview} />}
+      {Movies[17] &&
+        <BannerImage  image={`${IMAGE_URL}w1280${Movies[17].backdrop_path && Movies[17].backdrop_path}`}
+        title={Movies[17].original_title} text={Movies[17].overview}
+        image2={`${IMAGE_URL}w1280${Movies[2].backdrop_path && Movies[2].backdrop_path}`}
+        title2={Movies[2].original_title} text2={Movies[2].overview}
+        image3={`${IMAGE_URL}w1280${Movies[6].backdrop_path && Movies[6].backdrop_path}`}
+        title3={Movies[6].original_title} text3={Movies[6].overview} />}
     <div className="title-style">
-      <Title id="popularM" className="popularMovies" level={2} >Popular Movies</Title>
+      <SearchBar
+      handleOnChange={handleOnChange}
+      handleOnSubmit={handleOnSubmit}
+      />
       <hr className="lineBreak"/>
       <Row className="grid-container">
-        {Movies && Movies.map((movie, index) => (
+        {list && list.map((movie, index) => (
           <React.Fragment key={index}>
             <GridCard
               image={movie.poster_path && `${IMAGE_URL}w500${movie.poster_path}`}

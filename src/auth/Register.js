@@ -26,20 +26,20 @@ function Register() {
   history.push("/");
 }
 
-
-
   return (
     <div className="register-container">
-    <h2 className="register-title">Register</h2>
-    <form onSubmit={submit}>
-      <label htmlFor="register-username">Username:</label>
-      <input id="register-username" type="text" placeholder="Username here" onChange={(e) => setUser(e.target.value)}/>
+      <div className="form-container">
+        <h2 className="register-title">Register</h2>
+        <form onSubmit={submit}>
+        <label htmlFor="register-username">Username:</label>
+        <input className="form-control" id="register-username" type="text" placeholder="Username here" onChange={(e) => setUser(e.target.value)}/>
       <br/>
-      <label htmlFor="register-password">Password:</label>
-      <input id="register-password" type="text" placeholder="Password here" onChange={(e) => setPassword(e.target.value)} />
+        <label htmlFor="register-password">Password:</label>
+        <input className="form-control" id="register-password" type="text" placeholder="Password here" onChange={(e) => setPassword(e.target.value)} />
       <br />
-      <input type="submit" value="Register" />
-    </form>
+        <input className="btn btn-outline-info" id="register-submit" type="submit" value="Register" />
+        </form>
+      </div>
     </div>
   )
 }

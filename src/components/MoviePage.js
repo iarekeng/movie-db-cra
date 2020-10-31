@@ -20,7 +20,7 @@ const movieId = props.match.params.movieId
   }, [])
 
   return (
-  <div>
+  <div className="page-container">
   {Movie &&
     <BannerID image={`${IMAGE_URL}w1280${Movie.backdrop_path && Movie.backdrop_path}`}
     title={Movie.original_title}
