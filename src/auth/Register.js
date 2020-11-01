@@ -26,18 +26,19 @@ function Register() {
   history.push("/");
 }
 
+const login = () => history.push('/login')
+
   return (
     <div className="register-container">
       <div className="form-container">
         <h2 className="register-title">Register</h2>
         <form onSubmit={submit}>
-        <label htmlFor="register-username">Username:</label>
-        <input className="form-control" id="register-username" type="text" placeholder="Username here" onChange={(e) => setUser(e.target.value)}/>
+        <input className="form-control" id="register-username" type="text" placeholder="Username" onChange={(e) => setUser(e.target.value)}/>
       <br/>
-        <label htmlFor="register-password">Password:</label>
-        <input className="form-control" id="register-password" type="text" placeholder="Password here" onChange={(e) => setPassword(e.target.value)} />
+        <input className="form-control" id="register-password" type="text" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
       <br />
-        <input className="btn btn-outline-info" id="register-submit" type="submit" value="Register" />
+        <input id="register-submit" type="submit" value="Register" />
+        <p className="not-registered">already registered? <button className="not-reg-button" onClick={login}> Log in here!</button></p>
         </form>
       </div>
     </div>

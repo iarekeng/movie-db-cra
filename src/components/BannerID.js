@@ -6,11 +6,11 @@ const { Title } = Typography;
 
 function BannerID(props) {
   return(
-    <div className="banner-container">
-      <img id="banner-image" src={props.image} alt="banner" />
-      <div className="banner-text-container">
-      <Title className="banner-title" level={2} > {props.title}</Title>
-      <p className="banner-text">{props.text}</p>
+    <div className="bannerID-container">
+      <img id="bannerID-image" src={props.image} alt="banner" />
+      <div className="bannerID-text-container">
+      <Title className="bannerID-title" level={2} > {props.title}</Title>
+      <p className="bannerID-text">{props.text}</p>
       </div>
     </div>
   )

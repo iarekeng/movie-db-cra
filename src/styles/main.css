@@ -7,11 +7,11 @@ body {
 }
 
 .page-container {
-  min-height: 70vh;
+  min-height: 76vh;
 }
 
 .register-container, .login-container {
-  min-height: 64vh;
+  min-height: 67vh;
 }
 
 /* Navbar */
@@ -73,6 +73,10 @@ box-shadow: none;
   margin-left: 2rem;
 }
 
+.bannerID-container {
+  color: whitesmoke;
+}
+
 .popularMovies {
   color: white;
 }
@@ -86,7 +90,7 @@ box-shadow: none;
   font-size: 1rem;
 }
 
-#banner-image {
+#banner-image, #bannerID-image {
   linear-gradient: (to bottom, rgba(0,0,0,0)
    39%, rgba(0,0,0,0)
    41%, rgba(0,0,0,0.65)
@@ -138,20 +142,62 @@ box-shadow: none;
 
 /* Register Page */
 .register-container, .login-container {
-  margin-top: 8em;
+  margin-top: 2.5em;
+  color: whitesmoke;
+  opacity: 1;
+
+}
+
+.user-input {
+  background: white;
+  color: whitesmoke;
+}
+
+.user-input:focus {
+  background: whitesmoke;
   color: whitesmoke;
 }
 
 .form-container {
-  border: #353A40 3px outset;
+  border: whitesmoke 1px groove;
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
   padding: 4em;
   width: 60vh;
 }
 
+.not-registered {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.not-reg-button {
+  color: #5AA0B5;
+  background: #0F0F0F;
+  outline: none;
+  box-shadow: none;
+  border: none;
+
+}
+
+#logging-in, #register-submit {
+  margin-left: 1vh;
+  padding: 3px 18.5vh;
+  border-radius: 15px;
+  background-color: #0F0F0F;
+  color: whitesmoke;
+  border: 1.5px solid #5AA0B5;
+}
+
+#logging-in:hover {
+  background-color: #5AA0B5;
+  transition: .5s;
+}
+
 .register-title, .login-title {
-  padding: 10px 0;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 #register-username, #register-password, #login-username, #login-password {

@@ -24,18 +24,20 @@ function Login() {
   history.push("/");
   }
 
+  const register = () => history.push('/register')
+
     return (
       <div className="login-container">
         <div className="form-container">
           <h2 className="login-title">Log in</h2>
           <form>
-            <label htmlFor="login-username">Username:</label>
-            <input className="form-control" id="login-username" type="text" placeholder="Username here" />
+
+            <input className="form-control user-input" id="login-username" type="text" placeholder="Username" />
             <br/>
-            <label htmlFor="login-password">Password:</label>
-            <input className="form-control" id="login-password" type="text" placeholder="Password here" />
+            <input className="form-control user-input" id="login-password" type="text" placeholder="Password" />
             <br />
-            <input className="btn btn-outline-info" type="submit" value="Log in" />
+            <input type="submit" id="logging-in" value="Log in" />
+            <p className="not-registered">not registered? <button className="not-reg-button" onClick={register}>create an account</button></p>
           </form>
         </div>
       </div>
