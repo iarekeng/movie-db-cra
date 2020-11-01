@@ -4,7 +4,7 @@ import BannerImage from './BannerImage'
 import SearchBar from './SearchBar'
 import { Row } from 'antd'
 import GridCard from './GridCard'
-import Axios from "axios"
+
 
 
 function Main() {
@@ -60,6 +60,9 @@ function Main() {
       {Movies[17] &&
         <BannerImage  image={`${IMAGE_URL}w1280${Movies[17].backdrop_path && Movies[17].backdrop_path}`}
         title={Movies[17].original_title} text={Movies[17].overview}
+        release_date={Movies[17].release_date}
+        vote_average={Movies[17].vote_average}
+        vote_count={Movies[17].vote_count}
         image2={`${IMAGE_URL}w1280${Movies[2].backdrop_path && Movies[2].backdrop_path}`}
         title2={Movies[2].original_title} text2={Movies[2].overview}
         image3={`${IMAGE_URL}w1280${Movies[6].backdrop_path && Movies[6].backdrop_path}`}

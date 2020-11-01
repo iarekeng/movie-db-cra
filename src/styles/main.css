@@ -7,7 +7,9 @@ body {
 }
 
 .page-container {
-  min-height: 76vh;
+  min-height: 100vh;
+  color: whitesmoke;
+  text-align: center;
 }
 
 .register-container, .login-container {
@@ -35,7 +37,30 @@ body {
   cursor: pointer;
 }
 
-/*  */
+/* SHOW PAGE */
+#star {
+  margin-left: 15px;
+  color: gold;
+}
+
+.actor-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border: 1px solid whitesmoke;
+}
+
+.bannerID-title {
+  margin-top: 15px;
+}
+
+.bannerID-text {
+  margin-bottom: 2em;
+}
+
+.cast {
+  margin-bottom: 1em;
+}
 
 /* Carousel */
 #carouselExampleIndicators {
