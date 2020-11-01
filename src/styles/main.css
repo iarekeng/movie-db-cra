@@ -165,6 +165,7 @@ box-shadow: none;
   margin-right: auto;
   padding: 4em;
   width: 60vh;
+  text-align: center;
 }
 
 .not-registered {
@@ -182,7 +183,8 @@ box-shadow: none;
 }
 
 #logging-in, #register-submit {
-  margin-left: 1vh;
+  margin-left: auto;
+  margin-right: auto;
   padding: 3px 18.5vh;
   border-radius: 15px;
   background-color: #0F0F0F;
@@ -206,6 +208,7 @@ box-shadow: none;
 
 #register-submit, #login-submit {
   margin-left: auto;
+  margin-right: auto;
   margin-top: 5px;
 }
 
