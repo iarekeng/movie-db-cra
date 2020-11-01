@@ -13,7 +13,7 @@ body {
 }
 
 .register-container, .login-container {
-  min-height: 67vh;
+  min-height: 72vh;
 }
 
 /* Navbar */
@@ -260,3 +260,159 @@ box-shadow: none;
 #instagram, #facebook, #twitter {
   font-size: 30px;
 }
+
+/* Iphone 6 7 8 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)  {
+
+    .register-container, .login-container {
+      min-height: 71vh;
+
+    }
+
+    .register-button {
+      display: block;
+    }
+
+    .form-container {
+      border: whitesmoke 1px solid;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 4em;
+      width: 50vh;
+      text-align: center;
+    }
+
+    .register-container, .login-container {
+      margin-top: 19em;
+      color: whitesmoke;
+    }
+}
+
+
+
+/* Iphone X */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px) {
+
+    .register-container, .login-container {
+      min-height: 81vh;
+
+    }
+
+    .register-button {
+      display: block;
+    }
+
+    .form-container {
+      border: whitesmoke 1px solid;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3.5em;
+      width: 35vh;
+      text-align: center;
+    }
+
+    .register-container, .login-container {
+      margin-top: 15em;
+      color: whitesmoke;
+    }
+
+    #logging-in, #register-submit {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3px 13.8vh;
+      border-radius: 15px;
+      background-color: #0F0F0F;
+      color: whitesmoke;
+      border: 1.5px solid #5AA0B5;
+    }
+  }
+
+  /* Iphone X landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    .register-container, .login-container {
+      min-height: 100vh;
+
+    }
+
+    .register-button {
+      display: block;
+    }
+
+    .form-container {
+      border: whitesmoke 1px solid;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 4em;
+      width: 70vh;
+      text-align: center;
+    }
+
+    .register-container, .login-container {
+      margin: 5em 0;
+      color: whitesmoke;
+    }
+
+    #logging-in, #register-submit {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3px 16.5vh;
+      border-radius: 15px;
+      background-color: #0F0F0F;
+      color: whitesmoke;
+      border: 1.5px solid #5AA0B5;
+    }
+  }
+
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+
+      .register-container, .login-container {
+        min-height: 100vh;
+
+      }
+
+      .register-button {
+        display: block;
+      }
+
+      .form-container {
+        border: whitesmoke 1px solid;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4em;
+        width: 70vh;
+        text-align: center;
+      }
+
+      .register-container, .login-container {
+        margin: 5em 0;
+        color: whitesmoke;
+      }
+
+      #logging-in, #register-submit {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3px 16.5vh;
+        border-radius: 15px;
+        background-color: #0F0F0F;
+        color: whitesmoke;
+        border: 1.5px solid #5AA0B5;
+      }
+
+    }

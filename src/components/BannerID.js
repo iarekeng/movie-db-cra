@@ -16,7 +16,7 @@ function BannerID(props) {
       <hr className="lineBreak"/>
       <h4>Overview</h4>
       <p className="bannerID-text">{props.text}</p>
-      <h2 className="cast">Cast & Character</h2>
+      <h2 className="cast">Cast & Characters</h2>
       </div>
     </div>
   )
