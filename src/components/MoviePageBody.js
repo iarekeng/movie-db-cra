@@ -7,4 +7,4 @@ function MoviePageBody() {
   )
 }
 
-export MoviePageBody;
+export default MoviePageBody;
