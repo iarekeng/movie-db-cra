@@ -57,16 +57,16 @@ function Main() {
 
   return (
     <div id="banner-scroll">
-      {Movies[17] &&
-        <BannerImage  image={`${IMAGE_URL}w1280${Movies[17].backdrop_path && Movies[17].backdrop_path}`}
-        title={Movies[17].original_title} text={Movies[17].overview}
-        release_date={Movies[17].release_date}
-        vote_average={Movies[17].vote_average}
-        vote_count={Movies[17].vote_count}
-        image2={`${IMAGE_URL}w1280${Movies[2].backdrop_path && Movies[2].backdrop_path}`}
-        title2={Movies[2].original_title} text2={Movies[2].overview}
-        image3={`${IMAGE_URL}w1280${Movies[6].backdrop_path && Movies[6].backdrop_path}`}
-        title3={Movies[6].original_title} text3={Movies[6].overview} />}
+      {Movies[13] &&
+        <BannerImage  image={`${IMAGE_URL}w1280${Movies[13].backdrop_path && Movies[13].backdrop_path}`}
+        title={Movies[13].original_title} text={Movies[13].overview}
+        release_date={Movies[13].release_date}
+        vote_average={Movies[13].vote_average}
+        vote_count={Movies[13].vote_count}
+        image2={`${IMAGE_URL}w1280${Movies[11].backdrop_path && Movies[11].backdrop_path}`}
+        title2={Movies[11].original_title} text2={Movies[11].overview}
+        image3={`${IMAGE_URL}w1280${Movies[10].backdrop_path && Movies[10].backdrop_path}`}
+        title3={Movies[10].original_title} text3={Movies[10].overview} />}
     <div className="title-style">
       <SearchBar
       handleOnChange={handleOnChange}
